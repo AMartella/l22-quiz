@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Online</title>
+    
+    <link rel="stylesheet" href="main.css">
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Quiz">
+</head>
+
+<body>
+
+    <div id="quiz-section">
+        <div class="header">
+            <h2>Prova d'Esame</h2>
+            <div class="timer">Tempo Rimanente: <span id="timer-display">02:00:00</span></div>
+        </div>
+
+        <div id="quiz-container" style="margin-top: 20px;"></div>
+
+        <button class="btn-submit" onclick="QuizApp.submitQuiz()">Conferma e Invia Quiz</button>
+    </div>
+
+    <div id="results-section" style="display: none;"></div>
+
+    <!-- Caricamento file JS -->
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Avvia il quiz all'apertura
+        document.addEventListener("DOMContentLoaded", () => {
+            QuizApp.init();
+        });
+    </script>
+</body>
+
+</html>
