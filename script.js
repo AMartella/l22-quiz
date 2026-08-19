@@ -118,7 +118,7 @@
               (r) => `
             <label class="answer-option">
               <input type="radio" name="question_${q.id}" value="${r.id}" onchange="QuizApp.saveAnswer(${q.id}, '${r.id}')">
-              <span><strong>${r.id}.</strong> ${r.testo}</span>
+              <span>${r.testo}</span>
             </label>
           `,
             )
