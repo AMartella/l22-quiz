@@ -20420,5 +20420,1264 @@ window.questionsData = [
     ],
     "corretta": "C"
   },
-  
+  {
+    "id": 816,
+    "domanda": "Leggere il seguente testo: 'Nonostante la pioggia battente, la squadra di soccorso è riuscita a raggiungere il rifugio di montagna entro la mezzanotte, salvando i tre escursionisti rimasti bloccati.' Qual è lo scopo principale dell'intervento della squadra di soccorso?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Riparare il rifugio di montagna danneggiato dal maltempo"
+      },
+      {
+        "id": "B",
+        "testo": "Misurare l'intensità della pioggia in alta quota"
+      },
+      {
+        "id": "C",
+        "testo": "Mettere in salvo tre escursionisti bloccati"
+      },
+      {
+        "id": "D",
+        "testo": "Tracciare un nuovo percorso verso il rifugio"
+      },
+      {
+        "id": "E",
+        "testo": "Accompagnare i turisti durante un'escursione notturna"
+      }
+    ],
+    "corretta": "C"
+  },
+  {
+    "id": 817,
+    "domanda": "Leggere il seguente testo: 'L'adozione di diete ricche di fibre e povere di zuccheri raffinati contribuisce in modo significativo alla riduzione del rischio di malattie cardiovascolari.' Secondo il testo, quale comportamento favorisce la salute cardiovascolare?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Aumentare il consumo di zuccheri raffinati"
+      },
+      {
+        "id": "B",
+        "testo": "Ridurre l'apporto di fibre nella dieta quotidiana"
+      },
+      {
+        "id": "C",
+        "testo": "Consumare alimenti ricchi di fibre e limitare gli zuccheri raffinati"
+      },
+      {
+        "id": "D",
+        "testo": "Eliminare del tutto i carboidrati complessi"
+      },
+      {
+        "id": "E",
+        "testo": "Sostituire la dieta con integratori vitaminici"
+      }
+    ],
+    "corretta": "C"
+  },
+  {
+    "id": 818,
+    "domanda": "Leggere il seguente testo: 'Sebbene il telescopio spaziale James Webb sia stato progettato per osservare le prime galassie dell'universo, le sue immagini hanno anche fornito dettagli inediti sugli atmosfera degli esopianeti.' Cosa si può dedurre dal testo relativamente al telescopio?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "È stato costruito esclusivamente per studiare il sistema solare"
+      },
+      {
+        "id": "B",
+        "testo": "Ha superato gli scopi iniziali offrendo dati anche sugli esopianeti"
+      },
+      {
+        "id": "C",
+        "testo": "Non è riuscito a fotografare le galassie più antiche"
+      },
+      {
+        "id": "D",
+        "testo": "È stato posizionato sulla Luna per migliorare le osservazioni"
+      },
+      {
+        "id": "E",
+        "testo": "Lavora solo in condizioni di illuminazione solare diretta"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 819,
+    "domanda": "Leggere il seguente testo: 'Il ripristino delle zone umide costiere rappresenta una difesa naturale efficace contro l'erosione e le mareggiate, oltre a costituire un habitat fondamentale per numerose specie migratorie.' Quale beneficio NON viene citato nel testo?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Protezione contro l'erosione"
+      },
+      {
+        "id": "B",
+        "testo": "Difesa dalle mareggiate"
+      },
+      {
+        "id": "C",
+        "testo": "Habitat per specie migratorie"
+      },
+      {
+        "id": "D",
+        "testo": "Produzione di energia idroelettrica"
+      },
+      {
+        "id": "E",
+        "testo": "Ripristino dell'ecosistema costiero"
+      }
+    ],
+    "corretta": "D"
+  },
+  {
+    "id": 820,
+    "domanda": "Leggere il seguente testo: 'La transizione digitale della pubblica amministrazione ha ridotto i tempi di attesa per i cittadini, sebbene rimangano difficoltà per le fasce di popolazione meno informatizzate.' Qual è la criticità menzionata nel testo?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "L'aumento dei tempi di attesa per la fruizione dei servizi"
+      },
+      {
+        "id": "B",
+        "testo": "I costi eccessivi per il mantenimento dei server pubblici"
+      },
+      {
+        "id": "C",
+        "testo": "Le difficoltà d'accesso per le persone con scarse competenze digitali"
+      },
+      {
+        "id": "D",
+        "testo": "La totale assenza di personale negli uffici fisici"
+      },
+      {
+        "id": "E",
+        "testo": "Il rifiuto da parte delle giovani generazioni di usare gli strumenti digitali"
+      }
+    ],
+    "corretta": "C"
+  },
+  {
+    "id": 821,
+    "domanda": "Leggere il seguente testo: 'La fotosintesi clorofilliana permette alle piante di convertire l'energia luminosa in energia chimica, utilizzando anidride carbonica e acqua per produrre glucosio e ossigeno.' Quale sostanza viene rilasciata come sottoprodotto essenziale?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Anidride carbonica"
+      },
+      {
+        "id": "B",
+        "testo": "Azoto"
+      },
+      {
+        "id": "C",
+        "testo": "Ossigeno"
+      },
+      {
+        "id": "D",
+        "testo": "Metano"
+      },
+      {
+        "id": "E",
+        "testo": "Idrogeno"
+      }
+    ],
+    "corretta": "C"
+  },
+  {
+    "id": 822,
+    "domanda": "Leggere il seguente testo: 'L'invenzione della stampa a caratteri mobili da parte di Gutenberg nel XV secolo ha rivoluzionato la diffusione del sapere, rendendo i libri accessibili a una platea molto più ampia rispetto al passato.' Qual è stato il principale impatto della stampa a caratteri mobili?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "La scomparsa immediata della scrittura a mano"
+      },
+      {
+        "id": "B",
+        "testo": "La democratizzazione e diffusione dell'accesso ai libri"
+      },
+      {
+        "id": "C",
+        "testo": "L'obbligo di istruzione scolastica per tutti i cittadini"
+      },
+      {
+        "id": "D",
+        "testo": "Il monopolio della Chiesa sulla produzione letteraria"
+      },
+      {
+        "id": "E",
+        "testo": "La riduzione del tasso di alfabetizzazione in Europa"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 823,
+    "domanda": "Leggere il seguente testo: 'Il fenomeno del surriscaldamento globale sta accelerando lo scioglimento dei ghiacciai artici, favorendo l'innalzamento del livello dei mari e minacciando le comunità costiere di tutto il mondo.' Qual è una delle conseguenze dirette descritte?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "L'abbassamento generale delle temperature oceaniche"
+      },
+      {
+        "id": "B",
+        "testo": "L'innalzamento del livello del mare con minaccia per le coste"
+      },
+      {
+        "id": "C",
+        "testo": "L'espansione dei ghiacciai nelle zone montuose"
+      },
+      {
+        "id": "D",
+        "testo": "La diminuzione delle precipitazioni piovose equatoriali"
+      },
+      {
+        "id": "E",
+        "testo": "La stabilizzazione del clima globale"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 824,
+    "domanda": "Leggere il seguente testo: 'Durante la Rivoluzione Industriale, l'introduzione della macchina a vapore ha trasformato radicalmente i processi produttivi, spostando la produzione dal lavoro artigianale a quello di fabbrica.' Quale mutamento principale si è verificato?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Il passaggio dalla produzione di fabbrica all'artigianato"
+      },
+      {
+        "id": "B",
+        "testo": "L'abbandono definitivo dell'agricoltura"
+      },
+      {
+        "id": "C",
+        "testo": "La transizione dal lavoro manuale artigianale al sistema di fabbrica"
+      },
+      {
+        "id": "D",
+        "testo": "La riduzione dell'uso del carbone come risorsa termica"
+      },
+      {
+        "id": "E",
+        "testo": "L'eliminazione dei trasporti su rotaia"
+      }
+    ],
+    "corretta": "C"
+  },
+  {
+    "id": 825,
+    "domanda": "Leggere il seguente testo: 'L'intelligenza artificiale generativa utilizza complessi modelli statistici per creare testi, immagini o codice a partire da un prompt inserito dall'utente.' Su cosa si basa questa tecnologia?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Sull'intuito umano programmato manualmente"
+      },
+      {
+        "id": "B",
+        "testo": "Su modelli matematici e statistici di apprendimento"
+      },
+      {
+        "id": "C",
+        "testo": "Esclusivamente su database fisici non digitali"
+      },
+      {
+        "id": "D",
+        "testo": "Su sistemi di trasmissione radiofonica avanzata"
+      },
+      {
+        "id": "E",
+        "testo": "Sulla riproduzione meccanica di schede perforate"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 826,
+    "domanda": "Leggere il seguente testo: 'La biodiversità di un ecosistema garantisce una maggiore resilienza di fronte ai cambiamenti climatici e all'impatto delle attività umane.' Cosa significa che un ecosistema è 'resiliente'?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Che non subisce mai alcuna variazione esterna"
+      },
+      {
+        "id": "B",
+        "testo": "Che ha la capacità di adattarsi e riprendersi dai disturbi"
+      },
+      {
+        "id": "C",
+        "testo": "Che è composto da un'unica specie animale e vegetale"
+      },
+      {
+        "id": "D",
+        "testo": "Che si estingue rapidamente al minimo cambiamento"
+      },
+      {
+        "id": "E",
+        "testo": "Che è del tutto indipendente dall'acqua e dalla luce"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 827,
+    "domanda": "Leggere il seguente testo: 'Il commercio equo e solidale mira a garantire ai produttori dei Paesi in via di sviluppo un prezzo giusto per le loro merci, promuovendo al contempo pratiche sostenibili.' Qual è l'obiettivo centrale di questo modello?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Massimizzare il profitto delle multinazionali distributrici"
+      },
+      {
+        "id": "B",
+        "testo": "Garantire retribuzioni e condizioni eque ai produttori svantaggiati"
+      },
+      {
+        "id": "C",
+        "testo": "Incoraggiare l'uso intensivo di pesticidi nell'agricoltura"
+      },
+      {
+        "id": "D",
+        "testo": "Ridurre il volume di merci scambiate a livello globale"
+      },
+      {
+        "id": "E",
+        "testo": "Tassare pesantemente le importazioni alimentari"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 828,
+    "domanda": "Leggere il seguente testo: 'L'architettura bioclimatica sfrutta le condizioni naturali del sito, come l'irraggiamento solare e i venti dominanti, per ottimizzare il comfort termico degli edifici senza un uso eccessivo di impianti tecnologici.' Come ottiene il comfort termico l'architettura bioclimatica?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Utilizzando esclusivamente condizionatori di ultima generazione"
+      },
+      {
+        "id": "B",
+        "testo": "Sfruttando elementi naturali del luogo come sole e vento"
+      },
+      {
+        "id": "C",
+        "testo": "Isolando completamente gli edifici dal contatto con l'aria esterna"
+      },
+      {
+        "id": "D",
+        "testo": "Aumentando al massimo il consumo di combustibili fossili"
+      },
+      {
+        "id": "E",
+        "testo": "Costruendo abitazioni solo in ambienti sotterranei"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 829,
+    "domanda": "Leggere il seguente testo: 'La scoperta della penicillina da parte di Alexander Fleming nel 1928 ha segnato la nascita della moderna terapia antibiotica, salvando milioni di vite da infezioni batteriche un tempo mortali.' Qual è stato l'effetto principale della scoperta?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "La cura definitiva contro tutte le malattie virali"
+      },
+      {
+        "id": "B",
+        "testo": "L'avvio della terapia antibiotica contro le infezioni batteriche"
+      },
+      {
+        "id": "C",
+        "testo": "L'invenzione dei primi vaccini per l'infanzia"
+      },
+      {
+        "id": "D",
+        "testo": "La riduzione dell'aspettativa di vita nelle città"
+      },
+      {
+        "id": "E",
+        "testo": "La scomparsa immediata di tutti i parassiti umani"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 830,
+    "domanda": "Leggere il seguente testo: 'Il telescopio spaziale Hubble, lanciato nel 1990, ha fornito dati fondamentali sulla velocità di espansione dell'universo e sull'età precisa del cosmo.' Qual è un merito di questo strumento?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Avere smentito la teoria della relatività generale"
+      },
+      {
+        "id": "B",
+        "testo": "Avere stimato l'età e il ritmo di espansione dell'universo"
+      },
+      {
+        "id": "C",
+        "testo": "Avere dimostrato che la Terra è al centro della galassia"
+      },
+      {
+        "id": "D",
+        "testo": "Avere sostituito completamente le osservazioni da terra"
+      },
+      {
+        "id": "E",
+        "testo": "Avere scoperto la presenza di vita vegetale su Marte"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 831,
+    "domanda": "Leggere il seguente testo: 'L'economia circolare si contrappone al modello lineare 'produci, usa, getta', proponendo invece il riuso, la riparazione e il riciclo dei materiali per ridurre al minimo i rifiuti.' Qual è il principio base dell'economia circolare?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Aumentare la produzione monouso"
+      },
+      {
+        "id": "B",
+        "testo": "Estendere il ciclo di vita delle risorse tramite riuso e riciclo"
+      },
+      {
+        "id": "C",
+        "testo": "Favorire l'incenerimento di tutti i rifiuti industriali"
+      },
+      {
+        "id": "D",
+        "testo": "Incoraggiare il consumo rapido di beni non durevoli"
+      },
+      {
+        "id": "E",
+        "testo": "Eliminare del tutto l'uso della plastica nell'industria"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 832,
+    "domanda": "Leggere il seguente testo: 'La Via della Seta era un'antica rete di rotte commerciali che collegava l'Asia orientale con il bacino del Mediterraneo, facilitando non solo lo scambio di merci ma anche di idee e culture.' Cosa favoriva oltre al commercio?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "L'isolamento politico dei vari imperi traversati"
+      },
+      {
+        "id": "B",
+        "testo": "Lo scambio culturale e concettuale tra regioni diverse"
+      },
+      {
+        "id": "C",
+        "testo": "La diffusione esclusiva di prodotti agricoli freschi"
+      },
+      {
+        "id": "D",
+        "testo": "Il divieto di viaggio per pellegrini e studiosi"
+      },
+      {
+        "id": "E",
+        "testo": "La creazione di una moneta unica globale"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 833,
+    "domanda": "Leggere il seguente testo: 'La barriera emato-encefalica è una struttura anatomica che protegge il cervello da sostanze tossiche presenti nel sangue, pur permettendo il passaggio dei nutrienti essenziali.' Qual è il suo compito principale?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Regolare il battito cardiaco sotto sforzo"
+      },
+      {
+        "id": "B",
+        "testo": "Proteggere l'encefalo da elementi nocivi e far passare i nutrienti"
+      },
+      {
+        "id": "C",
+        "testo": "Facilitare la produzione di ormoni tiroidei"
+      },
+      {
+        "id": "D",
+        "testo": "Bloccare l'afflusso di ossigeno alle cellule nervose"
+      },
+      {
+        "id": "E",
+        "testo": "Filtrare le tossine nei reni"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 834,
+    "domanda": "Leggere il seguente testo: 'La nascita della democrazia ateniese nel V secolo a.C. ha introdotto il concetto di cittadinanza attiva e partecipazione decisionale, sebbene ne fossero esclusi donne, schiavi e stranieri.' Chi partecipava alle decisioni politiche nell'Atene classica?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Tutti i residenti all'interno delle mura della città"
+      },
+      {
+        "id": "B",
+        "testo": "Solo i cittadini maschi liberi e autoctoni"
+      },
+      {
+        "id": "C",
+        "testo": "Soprattutto le donne di classe nobile"
+      },
+      {
+        "id": "D",
+        "testo": "Esclusivamente gli schiavi affrancati"
+      },
+      {
+        "id": "E",
+        "testo": "I mercanti provenienti dalle altre polis"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 835,
+    "domanda": "Leggere il seguente testo: 'L'effetto serra è un fenomeno naturale fondamentale per la vita sulla Terra, poiché mantiene le temperature medie idonee; tuttavia, l'eccesso di emissioni antropiche ne accentua gli effetti provocando il riscaldamento globale.' Cosa afferma il testo sull'effetto serra?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "È un fenomeno del tutto nocivo nato con l'industrializzazione"
+      },
+      {
+        "id": "B",
+        "testo": "È un processo naturale la cui alterazione umana causa problemi ambientali"
+      },
+      {
+        "id": "C",
+        "testo": "Non ha alcun legame con le temperature del nostro pianeta"
+      },
+      {
+        "id": "D",
+        "testo": "Viene ridotto dall'aumento delle emissioni di carbonio"
+      },
+      {
+        "id": "E",
+        "testo": "Impedisce completamente la riflessione della luce solare"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 836,
+    "domanda": "Leggere il seguente testo: 'L'UNESCO seleziona i Patrimoni dell'Umanità con l'obiettivo di tutelare beni culturali e naturali di eccezionale valore universale per le generazioni future.' Qual è lo scopo primario della selezione UNESCO?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Privatizzare i monumenti storici più famosi"
+      },
+      {
+        "id": "B",
+        "testo": "Proteggere siti di rilevanza culturale e naturale per il futuro"
+      },
+      {
+        "id": "C",
+        "testo": "Limitare il turismo internazionale nelle città d'arte"
+      },
+      {
+        "id": "D",
+        "testo": "Finanziare scavi archeologici solo in Europa"
+      },
+      {
+        "id": "E",
+        "testo": "Creare parchi divertimento a tema storico"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 837,
+    "domanda": "Leggere il seguente testo: 'Il Rinascimento italiano si è caratterizzato per la riscoperta della cultura classica e per un rinnovato interesse verso l'uomo e la natura, ponendo l'individuo al centro del cosmo.' Qual è la visione antropocentrica rinascimentale?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "L'uomo è subordinato al volere e alle leggi del fato"
+      },
+      {
+        "id": "B",
+        "testo": "L'essere umano occupa una posizione centrale nell'universo"
+      },
+      {
+        "id": "C",
+        "testo": "La natura deve prevalere sulla volontà dell'uomo"
+      },
+      {
+        "id": "D",
+        "testo": "La cultura classica viene considerata superata e inutile"
+      },
+      {
+        "id": "E",
+        "testo": "L'arte deve occuparsi unicamente di temi ultraterreni"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 838,
+    "domanda": "Leggere il seguente testo: 'La biodiversità vegetale nelle foreste tropicali è fondamentale per la medicina moderna, poiché molte delle sostanze attive dei farmaci derivano da piante indigene.' Qual è l'importanza delle piante tropicali menzionata?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Sono utilizzate solo come fonte di legname da costruzione"
+      },
+      {
+        "id": "B",
+        "testo": "Forniscono principi attivi impiegati nella produzione di farmaci"
+      },
+      {
+        "id": "C",
+        "testo": "Sono la causa principale dell'umidità atmosferica"
+      },
+      {
+        "id": "D",
+        "testo": "Impediscono la crescita di altre specie vegetali minori"
+      },
+      {
+        "id": "E",
+        "testo": "Vengono usate esclusivamente per la produzione di fertilizzanti"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 839,
+    "domanda": "Leggere il seguente testo: 'I vaccini a mRNA insegnano al nostro corpo a produrre una proteina che innesca una risposta immunitaria, proteggendoci da future infezioni senza introdurre il virus vivo o attenuato.' Come funzionano questi vaccini?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Iniettando il patogeno vivo direttamente nel flusso sanguigno"
+      },
+      {
+        "id": "B",
+        "testo": "Istruendo le cellule a sintetizzare una specifica proteina immunizzante"
+      },
+      {
+        "id": "C",
+        "testo": "Sostituendo il codice genetico del paziente"
+      },
+      {
+        "id": "D",
+        "testo": "Eliminando istantaneamente i globuli bianchi in eccesso"
+      },
+      {
+        "id": "E",
+        "testo": "Rafforzando la struttura ossea dell'organismo"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 840,
+    "domanda": "Leggere il seguente testo: 'La Magna Carta, firmata nel 1215 in Inghilterra, ha limitato per la prima volta i poteri del sovrano, ponendo le basi per lo sviluppo del costituzionalismo moderno.' Qual è il valore storico di questo documento?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Ha abolito la monarchia favorendo la repubblica"
+      },
+      {
+        "id": "B",
+        "testo": "Ha introdotto limitazioni formali all'autorità del re"
+      },
+      {
+        "id": "C",
+        "testo": "Ha stabilito l'obbligo di leva per i contadini"
+      },
+      {
+        "id": "D",
+        "testo": "Ha unificato i regni d'Inghilterra e Scozia"
+      },
+      {
+        "id": "E",
+        "testo": "Ha creato il primo sistema bancario centralizzato"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 841,
+    "domanda": "Leggere il seguente testo: 'Il fenomeno dell'urbanizzazione nel XX secolo ha comportato un forte spopolamento delle aree rurali a favore delle grandi metropoli, alterando la struttura socio-economica delle nazioni.' Cosa ha provocato questo processo?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Un costante aumento della popolazione nelle campagne"
+      },
+      {
+        "id": "B",
+        "testo": "Lo spostamento di abitanti dai villaggi alle grandi città"
+      },
+      {
+        "id": "C",
+        "testo": "L'abbandono completo dei trasporti pubblici urbani"
+      },
+      {
+        "id": "D",
+        "testo": "La scomparsa del settore terziario"
+      },
+      {
+        "id": "E",
+        "testo": "La riduzione globale della popolazione planetaria"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 842,
+    "domanda": "Leggere il seguente testo: 'Le barriere coralline, pur coprendo meno dell'1% del fondo oceanico, ospitano circa il 25% di tutte le specie marine conosciute, rendendole tra gli ecosistemi più ricchi del pianeta.' Quale dato emerge sul peso biologico delle barriere coralline?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Occupano la maggior parte delle superfici marine della Terra"
+      },
+      {
+        "id": "B",
+        "testo": "Ospitano una quota sproporzionatamente alta di specie marine"
+      },
+      {
+        "id": "C",
+        "testo": "Sono del tutto prive di vegetazione e fauna acquatica"
+      },
+      {
+        "id": "D",
+        "testo": "Sono in grado di sopravvivere solo in mari freddi e profondi"
+      },
+      {
+        "id": "E",
+        "testo": "Contengono meno specie di quante ne vivano nei fiumi"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 843,
+    "domanda": "Leggere il seguente testo: 'La teoria della relatività ristretta di Einstein ha rivoluzionato la fisica affermando che il tempo e lo spazio non sono assoluti, ma dipendono dallo stato di moto dell'osservatore.' Qual è il concetto innovativointrodotto?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Che la velocità della luce cambia in base alla temperatura"
+      },
+      {
+        "id": "B",
+        "testo": "Che spazio e tempo variano in relazione al punto di vista dell'osservatore"
+      },
+      {
+        "id": "C",
+        "testo": "Che la gravità è una forza istantanea a distanza infinita"
+      },
+      {
+        "id": "D",
+        "testo": "Che l'universo è statico e immobile"
+      },
+      {
+        "id": "E",
+        "testo": "Che l'energia non può mai trasformarsi in materia"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 844,
+    "domanda": "Leggere il seguente testo: 'I beni culturali immateriali, come le tradizioni orali, le arti dello spettacolo e i riti festivi, richiedono strategie di salvaguardia diverse rispetto ai monumenti fisici.' Perché occorrono strategie differenziate?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Perché i beni immateriali hanno un valore economico nullo"
+      },
+      {
+        "id": "B",
+        "testo": "Perché si tratta di prassi vive legate alle persone e alla memoria"
+      },
+      {
+        "id": "C",
+        "testo": "Perché possono essere conservati solo nei musei d'arte contemporanea"
+      },
+      {
+        "id": "D",
+        "testo": "Perché non appartengono a nessuna comunità specifica"
+      },
+      {
+        "id": "E",
+        "testo": "Perché rischiano la distruzione a causa degli agenti atmosferici"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 845,
+    "domanda": "Leggere il seguente testo: 'La microbioma intestinale è un complesso insieme di microrganismi che svolge un ruolo fondamentale nella digestione, nel sistema immunitario e nella salute generale dell'ospite.' Di cosa si occupa il microbioma?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Regola unicamente la vista e l'udito"
+      },
+      {
+        "id": "B",
+        "testo": "Influisce su digestione, immunità e benessere complessivo"
+      },
+      {
+        "id": "C",
+        "testo": "Provoca in modo permanente malattie cardiovascolari"
+      },
+      {
+        "id": "D",
+        "testo": "Si trova esclusivamente negli alimenti fermentati prima del consumo"
+      },
+      {
+        "id": "E",
+        "testo": "Sostituisce il lavoro delle cellule del fegato"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 846,
+    "domanda": "Leggere il seguente testo: 'L'Illuminismo è stato un movimento culturale ed filosofico del XVIII secolo che ha promosso l'uso della ragione come strumento primario per affrancare l'uomo dall'ignoranza e dalle superstizioni.' Qual era la guida di questo movimento?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "L'obbedienza alle tradizioni medievali"
+      },
+      {
+        "id": "B",
+        "testo": "L'esercizio del pensiero critico e della ragione"
+      },
+      {
+        "id": "C",
+        "testo": "La fede cieca nei dogmi religiosi"
+      },
+      {
+        "id": "D",
+        "testo": "Il rifiuto della scienza applicata"
+      },
+      {
+        "id": "E",
+        "testo": "Il ritorno alla produzione artigianale classica"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 847,
+    "domanda": "Leggere il seguente testo: 'La tecnologia a blockchain garantisce la sicurezza delle transazioni digitali attraverso un registro decentralizzato e crittografato, impossibile da alterare retroattivamente senza il consenso della rete.' Qual è una caratteristica chiave della blockchain?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Viene gestita da un unico server centrale dell'amministrazione pubblica"
+      },
+      {
+        "id": "B",
+        "testo": "Utilizza un registro immutabile e distribuito tra più nodi"
+      },
+      {
+        "id": "C",
+        "testo": "Consente la modifica anonima dei dati già salvati"
+      },
+      {
+        "id": "D",
+        "testo": "Non richiede alcun tipo di crittografia per la protezione dei dati"
+      },
+      {
+        "id": "E",
+        "testo": "Funziona solo senza connessione alla rete internet"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 848,
+    "domanda": "Leggere il seguente testo: 'L'effetto placebo si verifica quando un paziente riscontra un miglioramento della propria condizione dopo aver ricevuto un trattamento privo di efficacia terapeutica intrinseca, guidato dalla convinzione della sua validità.' Su cosa si fonda l'effetto placebo?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Sulla composizione chimica del farmaco impiegato"
+      },
+      {
+        "id": "B",
+        "testo": " Sulla risposta psicologica e sulle aspettative del paziente"
+      },
+      {
+        "id": "C",
+        "testo": "Su un intervento chirurgico non invasivo"
+      },
+      {
+        "id": "D",
+        "testo": "Sull'uso prolungato di antibiotici ad ampio spettro"
+      },
+      {
+        "id": "E",
+        "testo": "Sulla completa assenza di sintomi iniziali"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 849,
+    "domanda": "Leggere il seguente testo: 'L'inquinamento acustico nelle aree urbane è stato correlato ad un incremento dei livelli di stress, disturbi del sonno e problemi cardiovascolari nella popolazione.' Quale effetto negativo NON è direttamente legato al rumore nel testo?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Insonnia e disturbi del riposo"
+      },
+      {
+        "id": "B",
+        "testo": "Stress psicofisico"
+      },
+      {
+        "id": "C",
+        "testo": "Complicazioni del sistema cardiovascolare"
+      },
+      {
+        "id": "D",
+        "testo": "Miglioramento della capacità concentrativa"
+      },
+      {
+        "id": "E",
+        "testo": "Disagi per la salute degli abitanti delle città"
+      }
+    ],
+    "corretta": "D"
+  },
+  {
+    "id": 850,
+    "domanda": "Leggere il seguente testo: 'Il processo di desertificazione è causato dalla combinazione di variabilità climatica e da attività umane insostenibili come il pascolo eccessivo e la deforestazione.' Quali sono le cause principali identificate?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Esclusivamente l'aumento delle precipitazioni piovose"
+      },
+      {
+        "id": "B",
+        "testo": "Fattori climatici abbinati a pratiche umane non sostenibili"
+      },
+      {
+        "id": "C",
+        "testo": "Il rimboschimento sistematico e l'agricoltura biologica"
+      },
+      {
+        "id": "D",
+        "testo": "L'abbassamento spontaneo delle temperature medie stagionali"
+      },
+      {
+        "id": "E",
+        "testo": "L'uso limitato di fertilizzanti naturali"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 851,
+    "domanda": "Leggere il seguente testo: 'Il fast fashion promuove un consumo frenetico di abiti a basso costo, portando a un elevato impatto ambientale legato allo smaltimento dei rifiuti tessili e allo sfruttamento della risorsa idrica.' Qual è una conseguenza del fast fashion?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "L'aumento della durata media dei capi acquistati"
+      },
+      {
+        "id": "B",
+        "testo": "Un considerevole impatto ambientale da smaltimento e consumo idrico"
+      },
+      {
+        "id": "C",
+        "testo": "La scomparsa della produzione tessile nei paesi in via di sviluppo"
+      },
+      {
+        "id": "D",
+        "testo": "La riduzione dell'uso di fibre sintetiche"
+      },
+      {
+        "id": "E",
+        "testo": "Il calo definitivo della vendita di abbigliamento in tutto il mondo"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 852,
+    "domanda": "Leggere il seguente testo: 'I neuroni specchio, scoperti da un team di ricercatori italiani guidato da Giacomo Rizzolatti, si attivano sia quando un individuo esegue un'azione sia quando osserva la medesima azione compiuta da altri.' Qual è la caratteristica di questi neuroni?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Si attivano solo durante la fase di sonno profondo"
+      },
+      {
+        "id": "B",
+        "testo": "Rispondono sia all'esecuzione diretta sia all'osservazione di un gesto"
+      },
+      {
+        "id": "C",
+        "testo": "Sono responsabili unicamente del controllo del linguaggio scritto"
+      },
+      {
+        "id": "D",
+        "testo": "Inibiscono i movimenti involontari del corpo"
+      },
+      {
+        "id": "E",
+        "testo": "Regolano la pressione sanguigna in momenti di stress"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 853,
+    "domanda": "Leggere il seguente testo: 'La teoria dell'evoluzione per selezione naturale, formulata da Charles Darwin, sostiene che gli individui con tratti più adatti all'ambiente hanno maggiore probabilità di sopravvivere e riprodursi.' Su cosa si basa l'adattamento secondo Darwin?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Sulla volontà del singolo animale di mutare corpo"
+      },
+      {
+        "id": "B",
+        "testo": "Sulla presenza di tratti vantaggiosi nell'interazione con l'ambiente"
+      },
+      {
+        "id": "C",
+        "testo": "Sulla scomparsa casuale di intere specie da un giorno all'altro"
+      },
+      {
+        "id": "D",
+        "testo": "Sulla creazione divina di nuove forme biologiche a ogni era"
+      },
+      {
+        "id": "E",
+        "testo": "Sulla mancanza totale di variazioni tra conspecifici"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 854,
+    "domanda": "Leggere il seguente testo: 'La bioetica si occupa di analizzare le implicazioni morali ed etiche derivanti dallo sviluppo delle scienze biomediche e dalle tecnologie di manipolazione della vita.' Di cosa si occupa principalmente la bioetica?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Della vendita di apparecchiature ospedaliere sul mercato globale"
+      },
+      {
+        "id": "B",
+        "testo": "Delle questioni morali legate all'avanzamento scientifico e medico"
+      },
+      {
+        "id": "C",
+        "testo": "Dello studio della struttura fisica delle piante acquatiche"
+      },
+      {
+        "id": "D",
+        "testo": "Della gestione burocratica delle farmacie comunali"
+      },
+      {
+        "id": "E",
+        "testo": "Della formazione degli ingegneri edili"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 855,
+    "domanda": "Leggere il seguente testo: 'L'alfabetizzazione finanziaria consente ai cittadini di comprendere concetti economici di base, come la gestione del risparmio, gli investimenti e la prevenzione del sovraindebitamento.' Qual è il vantaggio principale di queste competenze?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Garantire un reddito elevato a prescindere dal lavoro"
+      },
+      {
+        "id": "B",
+        "testo": "Prendere decisioni economiche consapevoli ed evitare debiti eccessivi"
+      },
+      {
+        "id": "C",
+        "testo": "Eliminare la necessità di pagare le tasse statali"
+      },
+      {
+        "id": "D",
+        "testo": "Lavorare come consulenti informatici nel settore bancario"
+      },
+      {
+        "id": "E",
+        "testo": "Prevedere con certezza l'andamento dei mercati finanziari"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 856,
+    "domanda": "Leggere il seguente testo: 'La migrazione dei popoli nomadi nel deserto del Sahara è tradizionalmente regolata dalla reperibilità di fonti d'acqua e pascoli per il bestiame.' Cosa determina i loro spostamenti?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "I confini politici stabiliti dagli stati confinanti"
+      },
+      {
+        "id": "B",
+        "testo": "La disponibilità stagionale di risorse vitali come acqua e vegetazione"
+      },
+      {
+        "id": "C",
+        "testo": "Le offerte di lavoro nelle industrie della costa"
+      },
+      {
+        "id": "D",
+        "testo": "Le variazioni dell'orbita terrestre intorno al Sole"
+      },
+      {
+        "id": "E",
+        "testo": "I percorsi prefissati delle autostrade moderne"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 857,
+    "domanda": "Leggere il seguente testo: 'Il restauro conservativo dei beni culturali mira a fermare il degrado delle opere d'arte senza alterarne la forma originale o sostituire le parti storiche integre.' Qual è l'approccio fondamentale del restauro conservativo?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Rifare completamente l'opera d'arte con materiali moderni"
+      },
+      {
+        "id": "B",
+        "testo": "Stabilizzare e proteggere l'opera rispettando l'autenticità storica"
+      },
+      {
+        "id": "C",
+        "testo": "Modificare lo stile per adattarlo al gusto contemporaneo"
+      },
+      {
+        "id": "D",
+        "testo": "Dipingere sopra le parti deteriorate con nuovi colori astratti"
+      },
+      {
+        "id": "E",
+        "testo": "Smontare e vendere le singole sezioni agli collezionisti"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 858,
+    "domanda": "Leggere il seguente testo: 'La fotosintesi artificiale è un processo tecnologico in fase di studio che mira a replicare la fotosintesi naturale per produrre carburanti puliti a partire da acqua e anidride carbonica tramite luce solare.' Qual è il fine di questa tecnologia?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Aumentare le emissioni di gas serra nell'atmosfera"
+      },
+      {
+        "id": "B",
+        "testo": "Generare combustibili ecologici usando luce, acqua e CO2"
+      },
+      {
+        "id": "C",
+        "testo": "Sostituire la produzione agricola globale con cibi sintetici"
+      },
+      {
+        "id": "D",
+        "testo": "Fornire energia alle stazioni spaziali senza utilizzare il sole"
+      },
+      {
+        "id": "E",
+        "testo": "Produrre plastica non riciclabile su larga scala"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 859,
+    "domanda": "Leggere il seguente testo: 'I beni pubblici si distinguono da quelli privati per essere non escludibili e non rivali nel consumo: l'uso da parte di un individuo non riduce la disponibilità per gli altri.' Quale caratteristica definisce un bene pubblico?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "È fruibile solo previo pagamento di una tariffa elevata"
+      },
+      {
+        "id": "B",
+        "testo": "È accessibile a tutti e il suo utilizzo non ne limita la disponibilità altrove"
+      },
+      {
+        "id": "C",
+        "testo": "Può essere posseduto esclusivamente da una persona alla volta"
+      },
+      {
+        "id": "D",
+        "testo": "Viene prodotto soltanto in quantità limitate dalle aziende private"
+      },
+      {
+        "id": "E",
+        "testo": "È un bene liberamente scambiabile nei mercati finanziari"
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 860,
+    "domanda": "Leggere il seguente testo: 'La declinazione dell'impronta idrica misura il volume totale di acqua dolce utilizzata direttamente e indirettamente per produrre i beni e i servizi consumati da un individuo o da una comunità.' Cosa valuta l'impronta idrica?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Solo l'acqua bevuta durante l'arco della giornata"
+      },
+      {
+        "id": "B",
+        "testo": "Il consumo totale diretto e indiretto di risorsa idrica per beni e servizi"
+      },
+      {
+        "id": "C",
+        "testo": "La quantità di pioggia caduta in un determinato territorio"
+      },
+      {
+        "id": "D",
+        "testo": "La capacità di depurazione degli impianti fognari comunali"
+      },
+      {
+        "id": "E",
+        "testo": "L'inquinamento causato dai detergenti domestici nel mare"
+      }
+    ],
+    "corretta": "B"
+  }
 ];
