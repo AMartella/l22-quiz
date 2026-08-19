@@ -2,7 +2,9 @@ body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.5; }
 .header { position: sticky; top: 0; background: #fff; padding: 10px; border-bottom: 2px solid #ccc; display: flex; justify-content: space-between; align-items: center; }
 .timer { font-size: 1.2rem; font-weight: bold; color: #d9534f; }
 .question-card { border: 1px solid #ddd; padding: 15px; margin-bottom: 15px; border-radius: 6px; }
+.question-card .question-text { font-size: 18px; }
 .answers-group label { display: block; margin: 8px 0; cursor: pointer; }
+.answers-group label span { font-size: 16px; }
 .btn-submit { background-color: #28a745; color: white; padding: 12px 20px; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer; }
 .stats-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
 .stats-table th, .stats-table td { border: 1px solid #ccc; padding: 8px; text-align: left; }
