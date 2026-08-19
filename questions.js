@@ -19998,5 +19998,427 @@ window.questionsData = [
       }
     ],
     "corretta": "A"
-  }
+  },
+  
+  {
+    "id": 801,
+    "domanda": "Leggi il seguente testo: «Nonostante le avversità meteo e il ritardo accumulato nei primi mesi, il cantiere per la costruzione del nuovo ponte si è concluso nei tempi previsti grazie a un riassetto dei turni di lavoro e all'impiego di tecnologie avanzate». Quale delle seguenti affermazioni è coerente con il testo?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "I lavori del ponte sono finiti in ritardo a causa del maltempo."
+      },
+      {
+        "id": "B",
+        "testo": "Il cantiere è stato completato nei tempi grazie alla riorganizzazione dei turni e a nuove tecnologie."
+      },
+      {
+        "id": "C",
+        "testo": "Le avversità meteorologiche hanno impedito l'uso delle tecnologie avanzate."
+      },
+      {
+        "id": "D",
+        "testo": "I turni di lavoro sono rimasti invariati durante tutta la durata dei lavori."
+      },
+      {
+        "id": "E",
+        "testo": "Il ponte non è stato completato nei tempi stabiliti inizialmente."
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 802,
+    "domanda": "Leggi il seguente testo: «La fotosintesi clorofilliana è il processo biologico mediante il quale le piante verdi e altri organismi trasformano l'energia luminosa in energia chimica. Durante questo processo, l'anidride carbonica e l'acqua vengono convertite in glucosio e ossigeno». Che cosa viene prodotto durante la fotosintesi?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Anidride carbonica e acqua"
+      },
+      {
+        "id": "B",
+        "testo": "Solo energia luminosa"
+      },
+      {
+        "id": "C",
+        "testo": "Glucosio e ossigeno"
+      },
+      {
+        "id": "D",
+        "testo": "Acqua e glucosio"
+      },
+      {
+        "id": "E",
+        "testo": "Anidride carbonica e ossigeno"
+      }
+    ],
+    "corretta": "C"
+  },
+  {
+    "id": 803,
+    "domanda": "Leggi il seguente testo: «Sebbene l'esplorazione spaziale presenti costi elevatissimi e notevoli rischi, i ricadute tecnologiche sulla vita quotidiana sono indiscutibili, spaziando dalla medicina dei materiali ai sistemi di telecomunicazione avanzati». Qual è il messaggio principale del testo?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "L'esplorazione spaziale è troppo costosa e andrebbe sospesa."
+      },
+      {
+        "id": "B",
+        "testo": "I rischi dello spazio superano di gran lunga i benefici tecnologici."
+      },
+      {
+        "id": "C",
+        "testo": "Nonostante costi e rischi, l'esplorazione spaziale porta benefici tecnologici concreti alla vita di tutti i giorni."
+      },
+      {
+        "id": "D",
+        "testo": "La medicina dei materiali è l'unico settore a trarre vantaggio dalle missioni spaziali."
+      },
+      {
+        "id": "E",
+        "testo": "Le telecomunicazioni non hanno beneficiato delle scoperte spaziali."
+      }
+    ],
+    "corretta": "C"
+  },
+  {
+    "id": 804,
+    "domanda": "Leggi il seguente testo: «L'adozione di una dieta mediterranea, ricca di frutta, verdura, legumi e olio d'oliva, è ampiamente correlata a una riduzione del rischio di malattie cardiovascolari, come evidenziato da numerosi studi epidemiologici negli ultimi decenni». In base al testo, quale tra questi è un beneficio della dieta mediterranea?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "L'eliminazione totale di tutte le patologie croniche."
+      },
+      {
+        "id": "B",
+        "testo": "La riduzione del rischio di patologie cardiovascolari."
+      },
+      {
+        "id": "C",
+        "testo": "L'aumento dell'incidenza delle malattie epidemiologiche."
+      },
+      {
+        "id": "D",
+        "testo": "Il consumo esclusivo di alimenti di origine animale."
+      },
+      {
+        "id": "E",
+        "testo": "La cura immediata dei problemi cardiaci esistenti."
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 805,
+    "domanda": "Leggi il seguente testo: «La narrazione autobiografica dell'autore si intreccia costantemente con le vicende storiche della Seconda Guerra Mondiale, rendendo il romanzo non solo una testimonianza personale, ma anche un affresco storico di grande valore». Qual è la caratteristica principale del romanzo secondo il testo?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "È un'opera interamente d'invenzione fantastica."
+      },
+      {
+        "id": "B",
+        "testo": "Tratta esclusivamente di eventi storici senza alcun riferimento personale."
+      },
+      {
+        "id": "C",
+        "testo": "Combina il racconto personale dell'autore con le vicende della Seconda Guerra Mondiale."
+      },
+      {
+        "id": "D",
+        "testo": "È un manuale di storia focalizzato sulla Prima Guerra Mondiale."
+      },
+      {
+        "id": "E",
+        "testo": "Racconta la vita dell'autore ignorando il contesto storico dell'epoca."
+      }
+    ],
+    "corretta": "C"
+  },
+  {
+    "id": 806,
+    "domanda": "Leggi il seguente testo: «Il restauro della tela del Seicento ha richiesto oltre tre anni di lavoro minuzioso. I restauratori hanno dovuto rimuovere diversi strati di vernice ossidata sovrapposti nei secoli prima di poter riportare alla luce i colori originali previsti dall'artista». Per quale motivo il restauro è durato a lungo?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Perché la tela era andata distrutta durante un incendio."
+      },
+      {
+        "id": "B",
+        "testo": "Per la necessità di rimuovere strati di vernice ossidata sovrapposti nel tempo."
+      },
+      {
+        "id": "C",
+        "testo": "Perché l'artista del Seicento ha impiegato tre anni a completare il dipinto."
+      },
+      {
+        "id": "D",
+        "testo": "Perché si dovevano ridipingere interamente i colori originali scomparsi."
+      },
+      {
+        "id": "E",
+        "testo": "A causa dell'assenza di strumenti idonei da parte dei restauratori."
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 807,
+    "domanda": "Leggi il seguente testo: «Benché lo smart working garantisca maggiore flessibilità oraria e riduca i tempi di spostamento casa-lavoro, diversi dipendenti lamentano una difficoltà latente nel separare la sfera professionale da quella privata». Quale criticità evidenzia il testo riguardo allo smart working?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "L'aumento dei costi di spostamento quotidiano."
+      },
+      {
+        "id": "B",
+        "testo": "La totale mancanza di flessibilità negli orari."
+      },
+      {
+        "id": "C",
+        "testo": "La difficoltà nel distinguere e separare vita privata e lavoro."
+      },
+      {
+        "id": "D",
+        "testo": "L'impossibilità di svolgere le mansioni assegnate da remoto."
+      },
+      {
+        "id": "E",
+        "testo": "Il rifiuto categorico dei lavoratori di adottare tale modalità."
+      }
+    ],
+    "corretta": "C"
+  },
+  {
+    "id": 808,
+    "domanda": "Leggi il seguente testo: «La biodiversità marina è minacciata non solo dall'inquinamento da plastica, ma anche dall'innalzamento delle temperature degli oceani, che causa lo sbiancamento dei coralli e l'alterazione delle rotte migratorie delle specie idriche». Quali sono i fattori di minaccia citati nel brano?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Esclusivamente l'inquinamento da plastica."
+      },
+      {
+        "id": "B",
+        "testo": "L'eccesso di pesca e la costruzione di dighe marittime."
+      },
+      {
+        "id": "C",
+        "testo": "L'inquinamento da plastica e l'aumento della temperatura degli oceani."
+      },
+      {
+        "id": "D",
+        "testo": "Solo lo sbiancamento naturale dei coralli."
+      },
+      {
+        "id": "E",
+        "testo": "L'aumento della popolazione globale di specie idriche."
+      }
+    ],
+    "corretta": "C"
+  },
+  {
+    "id": 809,
+    "domanda": "Leggi il seguente testo: «Il principio di causalità stabilisce che ogni evento è la conseguenza di una causa precedente. Nella fisica quantistica, tuttavia, questo concetto classico viene reinterpretato attraverso modelli probabilistici anziché deterministici». Come cambia la visione della causalità nella fisica quantistica rispetto a quella classica?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Viene completamente negata la presenza di qualsiasi evento fisicamente misurabile."
+      },
+      {
+        "id": "B",
+        "testo": "Si passa da una visione deterministica a una reinterpretazione probabilistica."
+      },
+      {
+        "id": "C",
+        "testo": "Diventa ancora più strettamente deterministica ed esatta."
+      },
+      {
+        "id": "D",
+        "testo": "Viene applicata unicamente agli eventi del passato."
+      },
+      {
+        "id": "E",
+        "testo": "Sostituisce i modelli probabilistici con leggi meccaniche immutabili."
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 810,
+    "domanda": "Leggi il seguente testo: «La nuova normativa europea mira a ridurre le emissioni di gas serra del 55% entro il 2030 rispetto ai livelli del 1990, incentivando la transizione verso le energie rinnovabili e la riqualificazione energetica degli edifici». Qual è l'obiettivo della normativa descritta?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Azzerare completamente le emissioni di gas serra entro il 2030."
+      },
+      {
+        "id": "B",
+        "testo": "Aumentare la riqualificazione edilizia del 55% rispetto al 1990."
+      },
+      {
+        "id": "C",
+        "testo": "Ridurre le emissioni di gas serra del 55% entro il 2030 prendendo come riferimento il 1990."
+      },
+      {
+        "id": "D",
+        "testo": "Sostituire tutte le energie rinnovabili con fonti tradizionali entro il 2030."
+      },
+      {
+        "id": "E",
+        "testo": "Ridurre il consumo d'acqua negli edifici pubblici del 55%."
+      }
+    ],
+    "corretta": "C"
+  },
+  {
+    "id": 811,
+    "domanda": "Leggi il seguente testo: «L'apprendimento permanente, noto anche come 'lifelong learning', è ormai un requisito fondamentale nel mercato del lavoro odierno, caratterizzato da un rapido e continuo aggiornamento delle competenze tecnologiche e professionali». Cosa si intende dedurre da questa affermazione?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "La formazione scolastica giovanile è sufficiente per l'intera carriera lavorativa."
+      },
+      {
+        "id": "B",
+        "testo": "Il mercato del lavoro non richiede più competenze tecnologiche."
+      },
+      {
+        "id": "C",
+        "testo": "È necessario continuare ad aggiornare le proprie competenze per tutta la vita lavorativa."
+      },
+      {
+        "id": "D",
+        "testo": "Le aziende preferiscono dipendenti senza alcuna formazione precedente."
+      },
+      {
+        "id": "E",
+        "testo": "Il 'lifelong learning' è utile solo a chi lavora nel settore dell'istruzione."
+      }
+    ],
+    "corretta": "C"
+  },
+  {
+    "id": 812,
+    "domanda": "Leggi il seguente testo: «L'archeologo ha spiegato che il ritrovamento di monete di diversa provenienza nello stesso sito testimonia come la città antica fosse un florido centro di scambi commerciali e non un insediamento isolato». Cosa dimostra il ritrovo delle monete?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "Che la città antica era del tutto isolata dalle rotte commerciali."
+      },
+      {
+        "id": "B",
+        "testo": "Che la città era un vivace snodo e centro per il commercio."
+      },
+      {
+        "id": "C",
+        "testo": "Che l'insediamento venne distrutto da un'invasione straniera."
+      },
+      {
+        "id": "D",
+        "testo": "Che le monete venivano coniate esclusivamente all'interno della città stessa."
+      },
+      {
+        "id": "E",
+        "testo": "Che la popolazione locale rifiutava l'uso del denaro negli scambi."
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 813,
+    "domanda": "Leggi il seguente testo: «La produzione biologica vieta l'uso di pesticidi e concimi di sintesi chimica, promuovendo invece rotazioni colturali e metodi naturali per preservare la fertilità del suolo e la salute degli ecosistemi». Quale tecnica è promossa dall'agricoltura biologica secondo il testo?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "L'impiego massiccio di fertilizzanti sintetici."
+      },
+      {
+        "id": "B",
+        "testo": "La monocoltura intensiva continua."
+      },
+      {
+        "id": "C",
+        "testo": "La rotazione delle colture e l'uso di metodi naturali."
+      },
+      {
+        "id": "D",
+        "testo": "L'utilizzo moderato di pesticidi chimici di nuova generazione."
+      },
+      {
+        "id": "E",
+        "testo": "La conversione dei terreni agricoli ad uso industriale."
+      }
+    ],
+    "corretta": "C"
+  },
+  {
+    "id": 814,
+    "domanda": "Leggi il seguente testo: «Nonostante la diffusione dei media digitali, la biblioteca comunale ha registrato un incremento dei prestiti librari nell'ultimo anno, dimostrando un rinnovato interesse della cittadinanza verso la lettura di testi cartacei». Quale dato emerge dalla lettura del brano?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "I media digitali hanno portato alla chiusura della biblioteca comunale."
+      },
+      {
+        "id": "B",
+        "testo": "Il numero dei prestiti di libri cartacei in biblioteca è aumentato nell'ultimo anno."
+      },
+      {
+        "id": "C",
+        "testo": "I cittadini preferiscono esclusivamente i formati digitali rispetto a quelli cartacei."
+      },
+      {
+        "id": "D",
+        "testo": "La biblioteca ha smesso di acquistare libri in formato cartaceo."
+      },
+      {
+        "id": "E",
+        "testo": "L'interesse per la lettura è diminuito drammaticamente tra i cittadini."
+      }
+    ],
+    "corretta": "B"
+  },
+  {
+    "id": 815,
+    "domanda": "Leggi il seguente testo: «Il telescopio spaziale ha inviato immagini inedite di una galassia lontana, permettendo agli astrofisici di analizzare la composizione chimica delle sue stelle e di formulare nuove ipotesi sulla formazione dell'universo primordiale». A cosa sono servite le immagini del telescopio?",
+    "argomento": "E",
+    "risposte": [
+      {
+        "id": "A",
+        "testo": "A smentire del tutto l'esistenza di galassie lontane."
+      },
+      {
+        "id": "B",
+        "testo": "A calcolare esclusivamente la distanza della Terra dal Sole."
+      },
+      {
+        "id": "C",
+        "testo": "Ad analizzare la chimica delle stelle e formulare teorie sull'universo primordiale."
+      },
+      {
+        "id": "D",
+        "testo": "A dimostrare l'assenza di stelle nelle galassie remote."
+      },
+      {
+        "id": "E",
+        "testo": "A sostituire le informazioni ottenute dai telescopi terrestri con dati vecchi."
+      }
+    ],
+    "corretta": "C"
+  },
+  
 ];
