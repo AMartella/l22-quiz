@@ -17,7 +17,7 @@
     B: 15,
     C: 10,
     D: 20,
-    //E: 15,
+    E: 15,
   };
 
   const TOTAL_DURATION_SECONDS = 2 * 60 * 60; // 2 ore in secondi
