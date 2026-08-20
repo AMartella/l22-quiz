@@ -24,6 +24,8 @@
 
   let selectedQuestions = [];
   let userAnswers = {}; // Mappa { questionId: "opzioneSelezionata" }
+  let flaggedQuestions = new Set(); // Insieme degli ID delle domande contrassegnate
+  let lastWrongAnswersData = []; // Salva gli errori per la copia negli appunti
   let timerInterval = null;
   let remainingTime = TOTAL_DURATION_SECONDS;
 
@@ -49,7 +51,7 @@
 
       if (available.length < countNeeded) {
         console.warn(
-          `Attenzione: Per l'argomento "${TOPIC_NAMES[arg] || arg}" sono disponibili solo ${available.length} domande su ${countNeeded} richieste.`,
+          `Attenzione: Per l'argomento "${TOPIC_NAMES[arg] || arg}" sono disponibili solo ${available.length} domande su ${countNeeded} richieste.`
         );
       }
 
@@ -95,6 +97,29 @@
     }, 1000);
   }
 
+  // --- GESTIONE FLAG ---
+
+  function toggleFlag(questionId) {
+    const btn = document.getElementById(`flag-btn-${questionId}`);
+    const card = document.getElementById(`q-card-${questionId}`);
+
+    if (flaggedQuestions.has(questionId)) {
+      flaggedQuestions.delete(questionId);
+      if (btn) {
+        btn.classList.remove("flagged");
+        btn.innerText = "🚩 Flag";
+      }
+      if (card) card.classList.remove("is-flagged");
+    } else {
+      flaggedQuestions.add(questionId);
+      if (btn) {
+        btn.classList.add("flagged");
+        btn.innerText = "🚩 Flaggata (Rimuovi)";
+      }
+      if (card) card.classList.add("is-flagged");
+    }
+  }
+
   // --- RENDERING DELL'INTERFACCIA ---
 
   function renderQuiz() {
@@ -107,9 +132,20 @@
       const topicLabel = TOPIC_NAMES[q.argomento] || q.argomento;
       const qBox = document.createElement("div");
       qBox.className = "question-card";
+      qBox.id = `q-card-${q.id}`;
+      
       qBox.innerHTML = `
-        <div class="question-header">
-          <strong>Quesito ${index + 1}</strong> <small>(${topicLabel})</small>
+        <div class="question-header" style="display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <strong>Quesito ${index + 1}</strong> <small>(${topicLabel})</small>
+          </div>
+          <button 
+            type="button" 
+            id="flag-btn-${q.id}" 
+            class="btn-flag ${flaggedQuestions.has(q.id) ? 'flagged' : ''}" 
+            onclick="QuizApp.toggleFlag(${q.id})">
+            ${flaggedQuestions.has(q.id) ? '🚩 Flaggata (Rimuovi)' : '🚩 Flag'}
+          </button>
         </div>
         <p class="question-text">${q.domanda}</p>
         <div class="answers-group">
@@ -117,10 +153,10 @@
             .map(
               (r) => `
             <label class="answer-option">
-              <input type="radio" name="question_${q.id}" value="${r.id}" onchange="QuizApp.saveAnswer(${q.id}, '${r.id}')">
+              <input type="radio" name="question_${q.id}" value="${r.id}" ${userAnswers[q.id] === r.id ? 'checked' : ''} onchange="QuizApp.saveAnswer(${q.id}, '${r.id}')">
               <span>${r.testo}</span>
             </label>
-          `,
+          `
             )
             .join("")}
         </div>
@@ -177,6 +213,7 @@
       }
     });
 
+    lastWrongAnswersData = wrongAnswers;
     renderResults(totalScore, stats, wrongAnswers);
   }
 
@@ -224,8 +261,17 @@
 
     html += `</tbody></table><hr>`;
 
-    // 3. Elenco Risposte Errate / Omesse
-    html += `<h3>Quesiti Errati od Omessi (${wrongAnswers.length}):</h3>`;
+    // 3. Elenco Risposte Errate / Omesse e Bottone Copia
+    html += `
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+        <h3>Quesiti Errati od Omessi (${wrongAnswers.length}):</h3>
+        ${
+          wrongAnswers.length > 0
+            ? `<button type="button" class="btn-copy" onclick="QuizApp.copyWrongAnswers()">📋 Copia errori negli appunti</button>`
+            : ""
+        }
+      </div>
+    `;
 
     if (wrongAnswers.length === 0) {
       html += `<p class="success-msg">Complimenti! Hai risposto correttamente a tutte le domande!</p>`;
@@ -246,16 +292,37 @@
     resultsContainer.innerHTML = html;
   }
 
+  // --- COPIA NEGLI APPUNTI ---
+
+  function copyWrongAnswers() {
+    if (!lastWrongAnswersData || lastWrongAnswersData.length === 0) return;
+
+    let textToCopy = "=== QUESITI ERRATI / OMESSI ===\n\n";
+
+    lastWrongAnswersData.forEach((item, idx) => {
+      textToCopy += `${idx + 1}. [${item.argomento}] ${item.domanda}\n`;
+      textToCopy += `   Tua risposta: ${item.rispostaUtente}\n`;
+      textToCopy += `   Risposta corretta: ${item.rispostaCorretta}\n\n`;
+    });
+
+    navigator.clipboard.writeText(textToCopy)
+      .then(() => {
+        alert("Domande errate copiate negli appunti!");
+      })
+      .catch((err) => {
+        console.error("Errore nel copiare il testo: ", err);
+        alert("Impossibile copiare negli appunti. Controlla i permessi del browser.");
+      });
+  }
+
   // --- INIZIALIZZAZIONE ---
 
   async function init() {
     try {
-      // Mostra un messaggio di caricamento se necessario
       const container = document.getElementById("quiz-container");
       if (container)
         container.innerHTML = "<p>Caricamento dei quesiti in corso...</p>";
 
-      // Attendi fino a 5 secondi il caricamento effettivo dei dati
       const allQuestions = await waitForQuestions(5000);
 
       selectedQuestions = selectQuestions(allQuestions);
@@ -272,7 +339,6 @@
       const startTime = Date.now();
 
       const check = setInterval(() => {
-        // Se l'array esiste ed è popolato, risolvi la Promise
         if (
           window.questionsData &&
           Array.isArray(window.questionsData) &&
@@ -284,8 +350,8 @@
           clearInterval(check);
           reject(
             new Error(
-              "Timeout: caricamento di questions.js fallito o file vuoto.",
-            ),
+              "Timeout: caricamento di questions.js fallito o file vuoto."
+            )
           );
         }
       }, pollIntervalMs);
@@ -297,5 +363,7 @@
     init,
     saveAnswer,
     submitQuiz,
+    toggleFlag,
+    copyWrongAnswers,
   };
 })();
