@@ -120,6 +120,18 @@
     }
   }
 
+  // --- GESTIONE TEXTAREA APPUNTI ---
+
+  function expandNotes(textarea) {
+    textarea.rows = 3;
+  }
+
+  function collapseNotes(textarea) {
+    if (!textarea.value.trim()) {
+      textarea.rows = 1;
+    }
+  }
+
   // --- RENDERING DELL'INTERFACCIA ---
 
   function renderQuiz() {
@@ -159,6 +171,15 @@
           `
             )
             .join("")}
+        </div>
+        <div class="notes-group" style="margin-top: 12px;">
+          <textarea 
+            class="question-notes" 
+            rows="1" 
+            placeholder="Spazio per appunti/ragionamento..." 
+            onfocus="QuizApp.expandNotes(this)" 
+            onblur="QuizApp.collapseNotes(this)"
+          ></textarea>
         </div>
       `;
       container.appendChild(qBox);
@@ -304,7 +325,6 @@
       textToCopy += `   Tua risposta: ${item.rispostaUtente}\n`;
       textToCopy += `   Risposta corretta: ${item.rispostaCorretta}\n\n`;
     });
-
     navigator.clipboard.writeText(textToCopy)
       .then(() => {
         alert("Domande errate copiate negli appunti!");
@@ -365,5 +385,7 @@
     submitQuiz,
     toggleFlag,
     copyWrongAnswers,
+    expandNotes,
+    collapseNotes,
   };
 })();
