@@ -353,3 +353,21 @@ hr {
     white-space: normal;
   }
 }
+
+.question-notes {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  padding: 6px 10px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: rows 0.2s ease, border-color 0.2s ease;
+}
+
+.question-notes:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
