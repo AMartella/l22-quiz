@@ -90,19 +90,27 @@ body {
 }
 
 .question-text {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #334155;
+  font-size: 1.15rem; /* Incrementato da 1rem */
+  font-weight: 600;
+  line-height: 1.6;
+  color: #0f172a;
   margin-bottom: 16px;
 }
 
 /* ==========================================
-   ANSWERS / OPTIONS
+   ANSWERS / OPTIONS (GRID 2x2)
    ========================================== */
 .answers-group {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 480px) {
+  .answers-group {
+    grid-template-columns: 1fr;
+  }
 }
 
 .answers-group label.answer-option {
@@ -115,7 +123,7 @@ body {
   cursor: pointer;
   user-select: none;
   transition: background-color 0.15s ease, border-color 0.15s ease;
-  min-height: 48px; /* Ottimizzato per il tocco mobile */
+  min-height: 52px;
 }
 
 .answers-group label.answer-option:active {
@@ -125,8 +133,8 @@ body {
 .answers-group label.answer-option input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   border: 2px solid #94a3b8;
   border-radius: 50%;
   margin-right: 12px;
@@ -137,7 +145,7 @@ body {
 
 .answers-group label.answer-option input[type="radio"]:checked {
   border-color: #2563eb;
-  border-width: 5px;
+  border-width: 6px;
 }
 
 .answers-group label.answer-option:has(input[type="radio"]:checked) {
@@ -146,14 +154,42 @@ body {
 }
 
 .answers-group label.answer-option span {
-  font-size: 0.95rem;
+  font-size: 1.05rem; /* Incrementato da 0.9rem */
   color: #1e293b;
+  line-height: 1.4;
+}
+
+/* ==========================================
+   TEXTAREA APPUNTI / RAGIONAMENTO
+   ========================================== */
+.notes-group {
+  width: 100%;
+}
+
+.question-notes {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #334155;
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.question-notes:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
 /* ==========================================
    BUTTONS
    ========================================== */
-/* Bottone Flag */
 .btn-flag {
   background-color: #f1f5f9;
   color: #475569;
@@ -177,7 +213,6 @@ body {
   border-color: #fde047;
 }
 
-/* Bottone Invio */
 .btn-submit {
   width: 100%;
   background-color: #16a34a;
@@ -201,7 +236,6 @@ body {
   transform: scale(0.99);
 }
 
-/* Bottone Copia */
 .btn-copy {
   background-color: #3b82f6;
   color: #ffffff;
@@ -246,7 +280,6 @@ hr {
   margin: 16px 0;
 }
 
-/* Table Responsive Container */
 .stats-table {
   width: 100%;
   border-collapse: collapse;
@@ -270,7 +303,6 @@ hr {
   font-weight: 600;
 }
 
-/* Wrong Items List */
 .wrong-answers-list {
   display: flex;
   flex-direction: column;
@@ -312,7 +344,7 @@ hr {
 @media (min-width: 640px) {
   body {
     padding: 30px;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
   }
 
@@ -353,21 +385,3 @@ hr {
     white-space: normal;
   }
 }
-
-.question-notes {
-  width: 100%;
-  box-sizing: border-box;
-  resize: vertical;
-  padding: 6px 10px;
-  font-family: inherit;
-  font-size: 0.9rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  transition: rows 0.2s ease, border-color 0.2s ease;
-}
-
-.question-notes:focus {
-  outline: none;
-  border-color: #0066cc;
-}
-
