@@ -6,11 +6,72 @@
     <title>Quiz Online</title>
     
     <link rel="stylesheet" href="main.css">
+    <style>
+        /* Semplici stili per il menu di scelta iniziale */
+        .config-card {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div id="quiz-section">
+    <!-- Schermata di Selezione Iniziale -->
+    <div id="config-section" class="config-card" style="display: none;">
+        <h2>Configura la Prova</h2>
+        
+        <div class="form-group">
+            <label for="quiz-mode">Modalità:</label>
+            <select id="quiz-mode" onchange="QuizApp.onModeChange()">
+                <option value="simulation">Simulazione Completa (80 Quesiti)</option>
+                <option value="topic">Allenamento per Singolo Argomento</option>
+            </select>
+        </div>
+
+        <div class="form-group" id="topic-select-group" style="display: none;">
+            <label for="topic-select">Scegli l'Argomento:</label>
+            <select id="topic-select">
+                <option value="A">Cultura generale</option>
+                <option value="B">Conoscenze di base di biologia, chimica, fisica, matematica</option>
+                <option value="C">Conoscenze di base di lingua inglese</option>
+                <option value="D">Capacità logiche</option>
+                <option value="E">Comprensione del testo</option>
+            </select>
+        </div>
+
+        <div class="form-group" id="count-select-group" style="display: none;">
+            <label for="count-select">Numero di Domande:</label>
+            <select id="count-select">
+                <option value="15">15 Domande</option>
+                <option value="20">20 Domande</option>
+                <option value="30">30 Domande</option>
+            </select>
+        </div>
+
+        <button class="btn-submit" onclick="QuizApp.startQuizFromConfig()">Inizia Quiz</button>
+    </div>
+
+    <!-- Sezione del Quiz Attivo -->
+    <div id="quiz-section" style="display: none;">
         <div class="header">
             <h2>L-22R Simulator</h2>
             <div class="timer">Tempo Rimanente: <span id="timer-display">02:00:00</span></div>
@@ -21,13 +82,13 @@
         <button class="btn-submit" onclick="QuizApp.submitQuiz()">Conferma e Invia Quiz</button>
     </div>
 
+    <!-- Sezione dei Risultati Finale -->
     <div id="results-section" style="display: none;"></div>
 
     <!-- Caricamento file JS -->
     <script src="questions.js"></script>
     <script src="script.js"></script>
     <script>
-        // Avvia il quiz all'apertura
         document.addEventListener("DOMContentLoaded", () => {
             QuizApp.init();
         });
