@@ -1,5 +1,5 @@
 /**
- * Logica del Quiz Online
+ * Logica del Quiz Online (Modalità Simulazione o Singolo Argomento)
  */
 (function () {
   // Mappatura visiva dei nomi degli argomenti
@@ -11,8 +11,8 @@
     E: "Comprensione del testo",
   };
 
-  // Configurazione dei requisiti per argomento
-  const REQUIREMENTS = {
+  // Configurazione dei requisiti per la simulazione completa
+  const SIMULATION_REQUIREMENTS = {
     A: 20,
     B: 15,
     C: 10,
@@ -20,18 +20,19 @@
     E: 15,
   };
 
-  const TOTAL_DURATION_SECONDS = 2 * 60 * 60; // 2 ore in secondi
+  const TOTAL_DURATION_SECONDS = 2 * 60 * 60; // 2 ore per la simulazione completa
 
+  let allQuestionsData = [];
   let selectedQuestions = [];
   let userAnswers = {}; // Mappa { questionId: "opzioneSelezionata" }
-  let flaggedQuestions = new Set(); // Insieme degli ID delle domande contrassegnate
-  let lastWrongAnswersData = []; // Salva gli errori per la copia negli appunti
+  let flaggedQuestions = new Set();
+  let lastWrongAnswersData = [];
   let timerInterval = null;
   let remainingTime = TOTAL_DURATION_SECONDS;
+  let isSingleTopicMode = false;
 
   // --- FUNZIONI DI UTILITÀ ---
 
-  // Algoritmo Fisher-Yates per mescolare un array in modo casuale
   function shuffle(array) {
     const arr = [...array];
     for (let i = arr.length - 1; i > 0; i--) {
@@ -41,35 +42,6 @@
     return arr;
   }
 
-  // Estrae N domande casuali per ciascun argomento e mescola le loro risposte
-  function selectQuestions(allQuestions) {
-    const result = [];
-
-    Object.keys(REQUIREMENTS).forEach((arg) => {
-      const countNeeded = REQUIREMENTS[arg];
-      const available = allQuestions.filter((q) => q.argomento === arg);
-
-      if (available.length < countNeeded) {
-        console.warn(
-          `Attenzione: Per l'argomento "${TOPIC_NAMES[arg] || arg}" sono disponibili solo ${available.length} domande su ${countNeeded} richieste.`
-        );
-      }
-
-      const shuffledArg = shuffle(available);
-      result.push(...shuffledArg.slice(0, countNeeded));
-    });
-
-    // Mescola l'ordine finale delle domande nel quiz
-    const finalQuestions = shuffle(result);
-
-    // Crea una copia profonda e mescola le opzioni di risposta per ogni domanda
-    return finalQuestions.map((q) => ({
-      ...q,
-      risposte: shuffle(q.risposte),
-    }));
-  }
-
-  // Formatting del tempo HH:MM:SS
   function formatTime(seconds) {
     const h = Math.floor(seconds / 3600);
     const m = Math.floor((seconds % 3600) / 60);
@@ -77,10 +49,97 @@
     return [h, m, s].map((v) => String(v).padStart(2, "0")).join(":");
   }
 
+  // --- SELEZIONE DOMANDE ---
+
+  function prepareQuestions(mode, topic = "", count = 15) {
+    let result = [];
+
+    if (mode === "simulation") {
+      isSingleTopicMode = false;
+      Object.keys(SIMULATION_REQUIREMENTS).forEach((arg) => {
+        const countNeeded = SIMULATION_REQUIREMENTS[arg];
+        const available = allQuestionsData.filter((q) => q.argomento === arg);
+
+        if (available.length < countNeeded) {
+          console.warn(
+            `Attenzione: Per l'argomento "${TOPIC_NAMES[arg] || arg}" sono disponibili solo ${available.length} domande su ${countNeeded} richieste.`
+          );
+        }
+
+        const shuffledArg = shuffle(available);
+        result.push(...shuffledArg.slice(0, countNeeded));
+      });
+      remainingTime = TOTAL_DURATION_SECONDS;
+    } else {
+      isSingleTopicMode = true;
+      const available = allQuestionsData.filter((q) => q.argomento === topic);
+      const shuffledArg = shuffle(available);
+      
+      if (shuffledArg.length < count) {
+        alert(`Attenzione: Per questo argomento sono disponibili solo ${shuffledArg.length} domande.`);
+      }
+      result = shuffledArg.slice(0, count);
+      
+      // Calcolo tempo stimato: ~1.5 minuti per domanda in modalità argomento singolo
+      remainingTime = result.length * 90;
+    }
+
+    const finalQuestions = shuffle(result);
+
+    return finalQuestions.map((q) => ({
+      ...q,
+      risposte: shuffle(q.risposte),
+    }));
+  }
+
+  // --- INTERFACCIA E CONFIGURAZIONE INIZIALE ---
+
+  function onModeChange() {
+    const modeSelect = document.getElementById("quiz-mode");
+    const topicGroup = document.getElementById("topic-select-group");
+    const countGroup = document.getElementById("count-select-group");
+
+    if (modeSelect.value === "topic") {
+      topicGroup.style.display = "block";
+      countGroup.style.display = "block";
+    } else {
+      topicGroup.style.display = "none";
+      countGroup.style.display = "none";
+    }
+  }
+
+  function startQuizFromConfig() {
+    const mode = document.getElementById("quiz-mode").value;
+    const topic = document.getElementById("topic-select").value;
+    const count = parseInt(document.getElementById("count-select").value, 10);
+
+    selectedQuestions = prepareQuestions(mode, topic, count);
+
+    if (selectedQuestions.length === 0) {
+      alert("Nessuna domanda disponibile per la configurazione scelta!");
+      return;
+    }
+
+    // Pulisci lo stato precedente
+    userAnswers = {};
+    flaggedQuestions.clear();
+    lastWrongAnswersData = [];
+
+    // Mostra la sezione Quiz e nascondi il setup
+    document.getElementById("config-section").style.display = "none";
+    document.getElementById("quiz-section").style.display = "block";
+
+    renderQuiz();
+    startTimer();
+  }
+
   // --- TIMER ---
 
   function startTimer() {
     const timerDisplay = document.getElementById("timer-display");
+    if (timerDisplay) timerDisplay.textContent = formatTime(remainingTime);
+
+    if (timerInterval) clearInterval(timerInterval);
 
     timerInterval = setInterval(() => {
       remainingTime--;
@@ -97,7 +156,7 @@
     }, 1000);
   }
 
-  // --- GESTIONE FLAG ---
+  // --- GESTIONE FLAG & NOTE ---
 
   function toggleFlag(questionId) {
     const btn = document.getElementById(`flag-btn-${questionId}`);
@@ -119,8 +178,6 @@
       if (card) card.classList.add("is-flagged");
     }
   }
-
-  // --- GESTIONE TEXTAREA APPUNTI ---
 
   function expandNotes(textarea) {
     textarea.rows = 3;
@@ -145,7 +202,7 @@
       const qBox = document.createElement("div");
       qBox.className = "question-card";
       qBox.id = `q-card-${q.id}`;
-      
+
       qBox.innerHTML = `
         <div class="question-header" style="display: flex; justify-content: space-between; align-items: center;">
           <div>
@@ -186,7 +243,6 @@
     });
   }
 
-  // Salvataggio risposta utente
   function saveAnswer(questionId, selectedId) {
     userAnswers[questionId] = selectedId;
   }
@@ -196,10 +252,11 @@
   function submitQuiz() {
     if (timerInterval) clearInterval(timerInterval);
 
-    // Dati per report per argomento
     const stats = {};
-    Object.keys(REQUIREMENTS).forEach((arg) => {
-      stats[arg] = { total: 0, correct: 0 };
+    selectedQuestions.forEach((q) => {
+      if (!stats[q.argomento]) {
+        stats[q.argomento] = { total: 0, correct: 0 };
+      }
     });
 
     let totalScore = 0;
@@ -207,18 +264,15 @@
 
     selectedQuestions.forEach((q) => {
       const arg = q.argomento;
-      if (!stats[arg]) stats[arg] = { total: 0, correct: 0 };
-
       stats[arg].total++;
 
       const userAnswer = userAnswers[q.id];
       const isCorrect = userAnswer === q.corretta;
 
       if (isCorrect) {
-        totalScore += 1; // 1 punto per risposta esatta
+        totalScore += 1;
         stats[arg].correct++;
       } else {
-        // Traccia domande errate o omesse (0 punti)
         const selectedText =
           q.risposte.find((r) => r.id === userAnswer)?.testo ||
           "Nessuna risposta data";
@@ -239,12 +293,10 @@
   }
 
   function renderResults(totalScore, stats, wrongAnswers) {
-    // Nascondi container quiz e mostra i risultati
     document.getElementById("quiz-section").style.display = "none";
     const resultsContainer = document.getElementById("results-section");
     resultsContainer.style.display = "block";
 
-    // 1. Punteggio Totale
     let html = `
       <h2>Risultati del Quiz</h2>
       <div class="score-summary">
@@ -264,7 +316,6 @@
         <tbody>
     `;
 
-    // 2. Tabella per Argomento
     Object.keys(stats).forEach((arg) => {
       const s = stats[arg];
       const percentage =
@@ -282,7 +333,6 @@
 
     html += `</tbody></table><hr>`;
 
-    // 3. Elenco Risposte Errate / Omesse e Bottone Copia
     html += `
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
         <h3>Quesiti Errati od Omessi (${wrongAnswers.length}):</h3>
@@ -309,6 +359,13 @@
       });
       html += `</div>`;
     }
+
+    // Pulsante per ricominciare la prova
+    html += `
+      <div style="margin-top: 30px; text-align: center;">
+        <button type="button" class="btn-submit" onclick="location.reload()">🔄 Nuovo Quiz</button>
+      </div>
+    `;
 
     resultsContainer.innerHTML = html;
   }
@@ -339,15 +396,8 @@
 
   async function init() {
     try {
-      const container = document.getElementById("quiz-container");
-      if (container)
-        container.innerHTML = "<p>Caricamento dei quesiti in corso...</p>";
-
-      const allQuestions = await waitForQuestions(5000);
-
-      selectedQuestions = selectQuestions(allQuestions);
-      renderQuiz();
-      startTimer();
+      allQuestionsData = await waitForQuestions(5000);
+      document.getElementById("config-section").style.display = "block";
     } catch (error) {
       console.error(error);
       alert("Errore durante il caricamento del quiz. Ricarica la pagina.");
@@ -378,7 +428,6 @@
     });
   }
 
-  // Esponi funzioni necessarie globalmente
   window.QuizApp = {
     init,
     saveAnswer,
@@ -387,5 +436,7 @@
     copyWrongAnswers,
     expandNotes,
     collapseNotes,
+    onModeChange,
+    startQuizFromConfig,
   };
 })();
