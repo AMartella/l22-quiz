@@ -261,6 +261,7 @@
 
     let totalScore = 0;
     const wrongAnswers = [];
+    const correctAnswers = [];
 
     selectedQuestions.forEach((q) => {
       const arg = q.argomento;
@@ -269,16 +270,21 @@
       const userAnswer = userAnswers[q.id];
       const isCorrect = userAnswer === q.corretta;
 
+      const selectedText =
+        q.risposte.find((r) => r.id === userAnswer)?.testo ||
+        "Nessuna risposta data";
+      const correctText =
+        q.risposte.find((r) => r.id === q.corretta)?.testo || "";
+
       if (isCorrect) {
         totalScore += 1;
         stats[arg].correct++;
+        correctAnswers.push({
+          domanda: q.domanda,
+          argomento: TOPIC_NAMES[q.argomento] || q.argomento,
+          rispostaCorretta: `${q.corretta} - ${correctText}`,
+        });
       } else {
-        const selectedText =
-          q.risposte.find((r) => r.id === userAnswer)?.testo ||
-          "Nessuna risposta data";
-        const correctText =
-          q.risposte.find((r) => r.id === q.corretta)?.testo || "";
-
         wrongAnswers.push({
           domanda: q.domanda,
           argomento: TOPIC_NAMES[q.argomento] || q.argomento,
@@ -289,10 +295,10 @@
     });
 
     lastWrongAnswersData = wrongAnswers;
-    renderResults(totalScore, stats, wrongAnswers);
+    renderResults(totalScore, stats, wrongAnswers, correctAnswers);
   }
 
-  function renderResults(totalScore, stats, wrongAnswers) {
+  function renderResults(totalScore, stats, wrongAnswers, correctAnswers = []) {
     document.getElementById("quiz-section").style.display = "none";
     const resultsContainer = document.getElementById("results-section");
     resultsContainer.style.display = "block";
@@ -333,6 +339,7 @@
 
     html += `</tbody></table><hr>`;
 
+    // --- SEZIONE RISPOSTE ERRATE/OMESSE ---
     html += `
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
         <h3>Quesiti Errati od Omessi (${wrongAnswers.length}):</h3>
@@ -350,10 +357,30 @@
       html += `<div class="wrong-answers-list">`;
       wrongAnswers.forEach((item, idx) => {
         html += `
-          <div class="wrong-item">
+          <div class="wrong-item" style="border-left: 4px solid #e74c3c; padding-left: 10px; margin-bottom: 15px;">
             <p><strong>${idx + 1}. [${item.argomento}] ${item.domanda}</strong></p>
-            <p class="txt-wrong">✖ Tua risposta: ${item.rispostaUtente}</p>
-            <p class="txt-correct">✔ Risposta corretta: ${item.rispostaCorretta}</p>
+            <p class="txt-wrong" style="color: #c0392b;">✖ Tua risposta: ${item.rispostaUtente}</p>
+            <p class="txt-correct" style="color: #27ae60;">✔ Risposta corretta: ${item.rispostaCorretta}</p>
+          </div>
+        `;
+      });
+      html += `</div>`;
+    }
+
+    html += `<hr>`;
+
+    // --- SEZIONE RISPOSTE CORRETTE ---
+    html += `<h3>Quesiti Risposti Correttamente (${correctAnswers.length}):</h3>`;
+
+    if (correctAnswers.length === 0) {
+      html += `<p>Nessuna risposta corretta in questo tentativo.</p>`;
+    } else {
+      html += `<div class="correct-answers-list">`;
+      correctAnswers.forEach((item, idx) => {
+        html += `
+          <div class="correct-item" style="border-left: 4px solid #2ecc71; padding-left: 10px; margin-bottom: 15px;">
+            <p><strong>${idx + 1}. [${item.argomento}] ${item.domanda}</strong></p>
+            <p class="txt-correct" style="color: #27ae60;">✔ Risposta data: ${item.rispostaCorretta}</p>
           </div>
         `;
       });
